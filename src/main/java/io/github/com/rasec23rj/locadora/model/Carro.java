@@ -3,11 +3,11 @@ package io.github.com.rasec23rj.locadora.model;
 public class Carro {
 
     private String modelo;
-    private double valorDiraria;
+    private double valorDiaria;
 
-    public Carro(String modelo, double valorDiraria) {
+    public Carro(String modelo, double valorDiaria) {
         this.modelo = modelo;
-        this.valorDiraria = valorDiraria;
+        this.valorDiaria = valorDiaria;
     }
 
     public double calcularValorAluguel(int dias) {
@@ -15,7 +15,7 @@ public class Carro {
         if (dias >= 5){
                 desconto = 50.0;
              }
-        return (dias * valorDiraria) - desconto;
+        return (dias * valorDiaria) - desconto;
     }
 
     public String getModelo() {
@@ -27,10 +27,10 @@ public class Carro {
     }
 
     public double getValorDiraria() {
-        return valorDiraria;
+        return valorDiaria;
     }
 
-    public void setValorDiraria(double valorDiraria) {
-        this.valorDiraria = valorDiraria;
+    public void setValorDiraria(double valorDiaria) {
+        this.valorDiaria = valorDiaria;
     }
 }
