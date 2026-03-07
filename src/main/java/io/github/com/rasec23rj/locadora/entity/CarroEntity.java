@@ -11,13 +11,15 @@ public class CarroEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String modelo;
+    private int ano;
 
     public CarroEntity() {
     }
 
-    public CarroEntity(String modelo, double valorDiaria) {
+    public CarroEntity(String modelo, double valorDiaria, int ano) {
         this.modelo = modelo;
         this.valorDiaria = valorDiaria;
+        this.ano = ano;
     }
 
     private double valorDiaria;
@@ -46,4 +48,11 @@ public class CarroEntity {
         this.valorDiaria = valorDiaria;
     }
 
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
 }
